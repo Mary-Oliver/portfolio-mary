@@ -11,7 +11,7 @@
 <body>
 
   <!-- Barra lateral fixa com links para seções -->
- <body>
+ 
   <button class="menu-toggle">☰</button>
 
   <nav class="sidebar-nav">
@@ -215,15 +215,20 @@ Decidi incluí-lo no portfólio para registrar minha evolução e demonstrar meu
   
 
   <!-- Carrossel -->
-  <script>
-    document.querySelectorAll('.project-card').forEach(card => {
-      const images = card.querySelectorAll('.carousel-image');
-      const prev = card.querySelector('.prev');
-      const next = card.querySelector('.next');
-      let current = 0;
 
+<script>
+  document.querySelectorAll('.project-card').forEach(card => {
+    const images = card.querySelectorAll('.carousel-image');
+    const prev = card.querySelector('.prev');
+    const next = card.querySelector('.next');
+    let current = 0;
+
+    if (images.length > 0) {
       images[current].classList.add('active');
+    }
 
+    // Só adiciona os eventos se os botões existirem
+    if (prev && next) {
       prev.addEventListener('click', () => {
         images[current].classList.remove('active');
         current = (current - 1 + images.length) % images.length;
@@ -235,8 +240,10 @@ Decidi incluí-lo no portfólio para registrar minha evolução e demonstrar meu
         current = (current + 1) % images.length;
         images[current].classList.add('active');
       });
-    });
-  </script>
+    }
+  });
+</script>
+
 
   <!-- Zoom de imagem -->
   <script>
