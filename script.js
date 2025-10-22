@@ -49,3 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+// ===== MENU RECOLHÍVEL =====
+const menuToggle = document.querySelector('.menu-toggle');
+const sidebarNav = document.querySelector('.sidebar-nav');
+
+if (menuToggle && sidebarNav) {
+  menuToggle.addEventListener('click', () => {
+    sidebarNav.classList.toggle('active');
+  });
+
+  // Fecha o menu ao clicar em um link
+  sidebarNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      sidebarNav.classList.remove('active');
+    });
+  });
+}
