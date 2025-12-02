@@ -1,282 +1,371 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Mary</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Mary</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <button class="menu-toggle">☰</button>
 
-  <!-- Barra lateral fixa com links para seções -->
- 
-  <button class="menu-toggle">☰</button>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
 
-  <nav class="sidebar-nav">
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#educacao">Educação</a></li>
-      <li><a href="#cursos">Cursos</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
-  <!-- Seção inicial -->
-  <header id="home">
-    <div class="header-content">
-      <h1>Mary Helen De Oliveira</h1>
-      <p>Graduanda em Banco de Dados e Estudante do Técnico em Análise e Desenvolvimento de Sistemas.</p>
-    </div>
-  </header>
-
-  <!-- Sobre -->
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <div class="sobre-container">
-      <img src="imagens/minha_foto.jpeg" alt="Mary Helen de Oliveira" class="sobre-img">
-      <div class="sobre-texto">
-        <p>Sou Mary Helen Oliveira, graduanda em Banco de Dados e estudante do técnico em Análise e Desenvolvimento de Sistemas.
-Apaixonada por tecnologia e curiosa sobre como as coisas funcionam, estou em transição de carreira e busco uma oportunidade de estágio para aplicar meus conhecimentos e crescer na área.
-Minha experiência com atendimento ao público na área da saúde me ensinou a lidar com desafios, manter a empatia e buscar soluções com calma e foco.</p>
-        <div class="info-pessoal">
-          <p><strong>GitHub:</strong> <a href="https://github.com/Mary-Oliver">meuGitHub</a></p>
-          <p><strong>Celular:</strong> (47) 99716-9309</p>
-          <p><strong>Cidade:</strong> Joinville, SC</p>
-          <p><strong>Email:</strong> maryoliver235@hotmail.com</p>
-          <p><strong>Freelance:</strong> Disponível</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Resumo / Skills</h2>
-
-    <div class="skill">
-      <p>Java (Orientação a Objetos)</p>
-      <div class="skill-bar"><div style="--width:75%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>MySQL / Banco de Dados</p>
-      <div class="skill-bar"><div style="--width:70%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>HTML</p>
-      <div class="skill-bar"><div style="--width:60%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>CSS</p>
-      <div class="skill-bar"><div style="--width:55%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>JavaScript (em aprendizado)</p>
-      <div class="skill-bar"><div style="--width:35%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>Versionamento (Git / GitHub)</p>
-      <div class="skill-bar"><div style="--width:65%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>Interface Gráfica (Desktop e Web)</p>
-      <div class="skill-bar"><div style="--width:60%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>Testes e Melhoria de Aplicações</p>
-      <div class="skill-bar"><div style="--width:55%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>Modelagem e Administração de Banco de Dados</p>
-      <div class="skill-bar"><div style="--width:70%;"></div></div>
-    </div>
-
-    <div class="skill">
-      <p>UX / UI Design (Experiência do Usuário)</p>
-      <div class="skill-bar"><div style="--width:45%;"></div></div>
-    </div>
-  </section>
-
-  <!-- Educação -->
-  <section id="educacao">
-    <h2>Educação</h2>
-    <div class="educacao-container">
-      <div class="educacao-card">
-        <h3>Técnico em Análise e Desenvolvimento de Sistemas</h3>
-        <p>2023 - 2025 | SENAC</p>
-        <p>Em andamento</p>
-      </div>
-      <div class="educacao-card">
-        <h3>Faculdade de Banco de Dados</h3>
-        <p>2025 - 2027 | UniAmerica Descomplica</p>
-        <p>Em andamento</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cursos -->
-  <section id="cursos">
-    <h2>Cursos Complementares</h2>
-    <div class="cursos-container">
-      <div class="curso-card">Técnico em assistente de administração de banco de dados - SENAC</div>
-      <div class="curso-card">Certificação UX UI DESIGN FIGMA + Inteligência Artificial - Udemy</div>
-      <div class="curso-card">Engenharia e Gestão de Sistemas Complexos (Soluções de TI) - Universidade Cruzeiro do Sul</div>
-      <div class="curso-card">Fundamentos de Redes de Computadores (Infraestrutura de TI) - HRBR Cursos</div>
-    </div>
-  </section>
-
-  <!-- Portfólio -->
-  <section id="projetos">
-    <h2>Portfólio</h2>
-    <div class="projects-container">
-
-      <!-- CARD 1 -->
-      <div class="project-card">
-        <h3>NutriLife</h3>
-        <div class="carousel">
-          <button class="prev">&#10094;</button>
-          <img src="imagens/tela_inicial.png" alt="Tela Inicial NutriLife" class="carousel-image active">
-          <img src="imagens/tela_calculoIMC.png" alt="Cálculo de IMC" class="carousel-image">
-          <img src="imagens/tela_recomendacoes.png" alt="Recomendações Nutricionais" class="carousel-image">
-          <button class="next">&#10095;</button>
-        </div>
+    <header id="home">
+      <div class="header-content">
+        <h1>Mary Helen De Oliveira</h1>
         <p>
-         Sistema desktop simples desenvolvido em Java Swing como atividade prática do curso de Análise e Desenvolvimento de Sistemas.
-O aplicativo realiza o cálculo do IMC, a estimativa de gasto calórico e a distribuição de macronutrientes, servindo como base para aprimorar meus conhecimentos em lógica, interface gráfica e boas práticas de programação.
+          Graduanda em Banco de Dados e Estudante do Técnico em Análise e
+          Desenvolvimento de Sistemas.
         </p>
-        <a href="https://github.com/mary-oliver/NutriLife" target="_blank" class="project-btn">Ver no GitHub</a>
       </div>
+    </header>
 
-      <!-- CARD 2 -->
-      <div class="project-card">
-        <h3>PeqSystem</h3>
-        <div class="carousel">
-          <button class="prev">&#10094;</button>
-          <img src="imagens/tela_login.png" alt="Tela Login PeqSystem" class="carousel-image active">
-          <img src="imagens/tela_principal.png" alt="Tela Principal PeqSystem" class="carousel-image">
-          <img src="imagens/tela_vendas.png" alt="Tela Vendas" class="carousel-image">
-          <img src="imagens/tela_clientes.png" alt="Tela Clientes" class="carousel-image">
-          <img src="imagens/tela_cadastro.png" alt="Tela Cadastro" class="carousel-image">
-          <img src="imagens/tela_configurações.png" alt="Tela Configurações" class="carousel-image">
-          <button class="next">&#10095;</button>
-        </div>
-        <p>
-      Sistema desenvolvido em Java com integração ao MySQL, voltado para a gestão de vendas e estoque de pequenas empresas.
-Este projeto faz parte de uma atividade prática do curso de Análise e Desenvolvimento de Sistemas e ainda está em construção.
-Decidi incluí-lo no portfólio para registrar minha evolução e demonstrar meu progresso técnico ao longo do desenvolvimento.
-        </p>
-        <a href="https://github.com/mary-oliver/PeqSystem-Refatorado" target="_blank" class="project-btn">Ver no GitHub</a>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="project-card">
-        <h3>Portfólio Pessoal</h3>
-        <div class="project-carousel">
-          <img class="project-image" src="imagens/meu_Portfolio.png" alt="Prévia do Portfólio Pessoal">
-        </div>
-        <p>
-          Site pessoal desenvolvido de forma independente com HTML, CSS e JavaScript, reunindo projetos, informações profissionais e formas de contato.
-É o meu primeiro portfólio, criado com base nas experiências e conhecimentos que venho adquirindo ao longo dos cursos e projetos realizados.
-        </p>
-        <div class="project-buttons">
-          <a href="#" target="_blank">Ver Projeto</a>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre-container">
+        <img
+          src="imagens/minha_foto.jpeg"
+          alt="Mary Helen de Oliveira"
+          class="sobre-img"
+        />
+        <div class="sobre-texto">
+          <p>
+            Sou Mary Helen Oliveira, graduanda em Banco de Dados e estudante do
+            técnico em Análise e Desenvolvimento de Sistemas. Apaixonada por
+            tecnologia e curiosa sobre como as coisas funcionam, estou em
+            transição de carreira e busco uma oportunidade de estágio para
+            aplicar meus conhecimentos e crescer na área. Minha experiência com
+            atendimento ao público na área da saúde me ensinou a lidar com
+            desafios, manter a empatia e buscar soluções com calma e foco.
+          </p>
+          <div class="info-pessoal">
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/Mary-Oliver">meuGitHub</a>
+            </p>
+            <p><strong>Celular:</strong> (47) 99716-9309</p>
+            <p><strong>Cidade:</strong> Joinville, SC</p>
+            <p><strong>Email:</strong> maryoliver235@hotmail.com</p>
+            <p><strong>Freelance:</strong> Disponível</p>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Resumo / Skills</h2>
 
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p><h4> Adoro desafios e aprender coisas novas! Se você procura alguém motivada, curiosa e pronta para crescer na área de tecnologia, fale comigo.</p></h4>
-    <div class="contact-info">
-      <p><strong>Ligue:</strong> (47) 99716-9309</p>
-      <p><strong>Email:</strong> maryoliver235@hotmail.com</p>
-    </div>
-  </section>
+      <div class="skill">
+        <p>Java (Orientação a Objetos)</p>
+        <div class="skill-bar"><div style="--width: 75%"></div></div>
+      </div>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; Mary Helen. Todos os direitos reservados.</p>
-  </footer>
+      <div class="skill">
+        <p>MySQL / Banco de Dados</p>
+        <div class="skill-bar"><div style="--width: 70%"></div></div>
+      </div>
 
-  
+      <div class="skill">
+        <p>HTML</p>
+        <div class="skill-bar"><div style="--width: 60%"></div></div>
+      </div>
 
-  <!-- Carrossel -->
+      <div class="skill">
+        <p>CSS</p>
+        <div class="skill-bar"><div style="--width: 55%"></div></div>
+      </div>
 
-<script>
-  document.querySelectorAll('.project-card').forEach(card => {
-    const images = card.querySelectorAll('.carousel-image');
-    const prev = card.querySelector('.prev');
-    const next = card.querySelector('.next');
-    let current = 0;
+      <div class="skill">
+        <p>JavaScript (em aprendizado)</p>
+        <div class="skill-bar"><div style="--width: 35%"></div></div>
+      </div>
 
-    if (images.length > 0) {
-      images[current].classList.add('active');
-    }
+      <div class="skill">
+        <p>Versionamento (Git / GitHub)</p>
+        <div class="skill-bar"><div style="--width: 65%"></div></div>
+      </div>
 
-    // Só adiciona os eventos se os botões existirem
-    if (prev && next) {
-      prev.addEventListener('click', () => {
-        images[current].classList.remove('active');
-        current = (current - 1 + images.length) % images.length;
-        images[current].classList.add('active');
+      <div class="skill">
+        <p>Interface Gráfica (Desktop e Web)</p>
+        <div class="skill-bar"><div style="--width: 60%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Testes e Melhoria de Aplicações</p>
+        <div class="skill-bar"><div style="--width: 55%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Modelagem e Administração de Banco de Dados</p>
+        <div class="skill-bar"><div style="--width: 70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>UX / UI Design (Experiência do Usuário)</p>
+        <div class="skill-bar"><div style="--width: 45%"></div></div>
+      </div>
+    </section>
+
+    <section id="educacao">
+      <h2>Educação</h2>
+      <div class="educacao-container">
+        <div class="educacao-card">
+          <h3>Técnico em Análise e Desenvolvimento de Sistemas</h3>
+          <p>2023 - 2025 | SENAC</p>
+          <p>Em andamento</p>
+        </div>
+        <div class="educacao-card">
+          <h3>Faculdade de Banco de Dados</h3>
+          <p>2025 - 2027 | UniAmerica Descomplica</p>
+          <p>Em andamento</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cursos">
+      <h2>Cursos Complementares</h2>
+      <div class="cursos-container">
+        <div class="curso-card">
+          Técnico em assistente de administração de banco de dados - SENAC
+        </div>
+        <div class="curso-card">
+          Certificação UX UI DESIGN FIGMA + Inteligência Artificial - Udemy
+        </div>
+        <div class="curso-card">
+          Engenharia e Gestão de Sistemas Complexos (Soluções de TI) -
+          Universidade Cruzeiro do Sul
+        </div>
+        <div class="curso-card">
+          Fundamentos de Redes de Computadores (Infraestrutura de TI) - HRBR
+          Cursos
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Portfólio</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>NutriLife</h3>
+          <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <img
+              src="imagens/tela_inicial.png"
+              alt="Tela Inicial NutriLife"
+              class="carousel-image active"
+            />
+            <img
+              src="imagens/tela_calculoIMC.png"
+              alt="Cálculo de IMC"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_recomendacoes.png"
+              alt="Recomendações Nutricionais"
+              class="carousel-image"
+            />
+            <button class="next">&#10095;</button>
+          </div>
+          <p style="text-align: left; font-size: 1em; line-height: 1.7">
+            <strong>NutriLife - Assistente Nutricional Desktop</strong
+            ><br /><br />
+            <strong>Objetivo:</strong> Auxiliar no acompanhamento de saúde com
+            cálculos rápidos e precisos.<br />
+            <strong>Tecnologias:</strong> Desenvolvido em Java com interface
+            gráfica Swing (Desktop).<br />
+            <strong>Funcionalidades:</strong> Cálculo automático de IMC,
+            estimativa de gasto calórico diário e distribuição ideal de
+            macronutrientes.<br />
+            <strong>Destaque:</strong> Aplicação prática de lógica de
+            programação e orientação a objetos.
+          </p>
+          <a
+            href="https://github.com/mary-oliver/NutriLife"
+            target="_blank"
+            class="project-btn"
+            >Ver no GitHub</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>PeqSystem</h3>
+          <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <img
+              src="imagens/tela_login.png"
+              alt="Tela Login PeqSystem"
+              class="carousel-image active"
+            />
+            <img
+              src="imagens/tela_principal.png"
+              alt="Tela Principal PeqSystem"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_vendas.png"
+              alt="Tela Vendas"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_clientes.png"
+              alt="Tela Clientes"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_cadastro.png"
+              alt="Tela Cadastro"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_configuracoes.png"
+              alt="Tela Configurações/usuário"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_relatorios.png"
+              alt="Tela Relatórios"
+              class="carousel-image"
+            />
+            <img
+              src="imagens/tela_fornecedores.png"
+              alt="Tela Fornecedores"
+              class="carousel-image"
+            />
+            <button class="next">&#10095;</button>
+          </div>
+
+          <p style="text-align: left; font-size: 1em; line-height: 1.7">
+            <strong>PeqSystem - Solução Web para Pequenos Negócios</strong
+            ><br /><br />
+            <strong>Objetivo:</strong> Sistema web intuitivo para gerenciar
+            vendas, clientes e estoque de forma eficiente.<br />
+            <strong>Tecnologias:</strong> Construído com a confiabilidade do
+            Java (Spring Boot) e a flexibilidade do HTML/CSS no front-end.<br />
+            <strong>Destaques:</strong> Interface amigável, fluxo de caixa
+            rápido (PDV) e segurança no acesso via Login.<br />
+            <strong>Diferencial:</strong> Projeto prático que une lógica de
+            negócios complexa com uma interface limpa e funcional.
+          </p>
+          <a
+            href="https://github.com/mary-oliver/peqsystem-web"
+            target="_blank"
+            class="project-btn"
+            >Ver no GitHub</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Portfólio Pessoal</h3>
+          <div class="project-carousel">
+            <img
+              class="project-image"
+              src="imagens/meu_Portfolio.png"
+              alt="Prévia do Portfólio Pessoal"
+            />
+          </div>
+          <p style="text-align: left; font-size: 1em; line-height: 1.7">
+            <strong>Portfólio Profissional Online</strong><br /><br />
+            <strong>Objetivo:</strong> Apresentar minha trajetória, projetos e
+            habilidades de forma centralizada e acessível.<br />
+            <strong>Tecnologias:</strong> Desenvolvido do zero com HTML5, CSS3 e
+            JavaScript puro.<br />
+            <strong>Estrutura:</strong> Design responsivo, carrossel de imagens
+            interativo e navegação fluida.<br />
+            <strong>Significado:</strong> Este site é a prova prática da minha
+            evolução como desenvolvedora Front-end.
+          </p>
+          <a href="#" class="project-btn">Ver Projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <h4>
+        Adoro desafios e aprender coisas novas! Se você procura alguém motivada,
+        curiosa e pronta para crescer na área de tecnologia, fale comigo.
+      </h4>
+      <div class="contact-info">
+        <p><strong>Ligue:</strong> (47) 99716-9309</p>
+        <p><strong>Email:</strong> maryoliver235@hotmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Mary Helen. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".project-card").forEach((card) => {
+        const images = card.querySelectorAll(".carousel-image");
+        const prev = card.querySelector(".prev");
+        const next = card.querySelector(".next");
+        let current = 0;
+
+        if (images.length > 0) {
+          images[current].classList.add("active");
+        }
+
+        if (prev && next) {
+          prev.addEventListener("click", () => {
+            images[current].classList.remove("active");
+            current = (current - 1 + images.length) % images.length;
+            images[current].classList.add("active");
+          });
+
+          next.addEventListener("click", () => {
+            images[current].classList.remove("active");
+            current = (current + 1) % images.length;
+            images[current].classList.add("active");
+          });
+        }
       });
+    </script>
 
-      next.addEventListener('click', () => {
-        images[current].classList.remove('active');
-        current = (current + 1) % images.length;
-        images[current].classList.add('active');
+    <script>
+      document.querySelectorAll(".carousel-image").forEach((img) => {
+        img.addEventListener("click", () => {
+          const overlay = document.createElement("div");
+          overlay.style.position = "fixed";
+          overlay.style.top = 0;
+          overlay.style.left = 0;
+          overlay.style.width = "100vw";
+          overlay.style.height = "100vh";
+          overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+          overlay.style.display = "flex";
+          overlay.style.alignItems = "center";
+          overlay.style.justifyContent = "center";
+          overlay.style.zIndex = 9999;
+
+          const enlargedImg = document.createElement("img");
+          enlargedImg.src = img.src;
+          enlargedImg.style.maxWidth = "90%";
+          enlargedImg.style.maxHeight = "90%";
+          enlargedImg.style.borderRadius = "10px";
+          enlargedImg.style.boxShadow = "0 0 20px rgba(255, 255, 255, 0.5)";
+          overlay.appendChild(enlargedImg);
+
+          overlay.addEventListener("click", () => overlay.remove());
+          document.body.appendChild(overlay);
+        });
       });
-    }
-  });
-</script>
+    </script>
 
-
-  <!-- Zoom de imagem -->
-  <script>
-    document.querySelectorAll('.carousel-image').forEach(img => {
-      img.addEventListener('click', () => {
-        const overlay = document.createElement('div');
-        overlay.style.position = 'fixed';
-        overlay.style.top = 0;
-        overlay.style.left = 0;
-        overlay.style.width = '100vw';
-        overlay.style.height = '100vh';
-        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-        overlay.style.display = 'flex';
-        overlay.style.alignItems = 'center';
-        overlay.style.justifyContent = 'center';
-        overlay.style.zIndex = 9999;
-
-        const enlargedImg = document.createElement('img');
-        enlargedImg.src = img.src;
-        enlargedImg.style.maxWidth = '90%';
-        enlargedImg.style.maxHeight = '90%';
-        enlargedImg.style.borderRadius = '10px';
-        enlargedImg.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.5)';
-        overlay.appendChild(enlargedImg);
-
-        overlay.addEventListener('click', () => overlay.remove());
-        document.body.appendChild(overlay);
-      });
-    });
-  </script>
-
-  <!-- Script externo -->
-  <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
